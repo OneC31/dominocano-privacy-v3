@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Dominó Cano</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e6e6e6; background: #121212; }
+      a { color: #8ab4f8; }
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 28px; }
+    .updated { color: #888; font-size: 0.9rem; margin-top: 0; }
+    .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px;
+      background: rgba(128,128,128,0.18); padding: 2px 8px; border-radius: 20px; margin-left: 6px; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 6px 0; }
+    code { background: rgba(128,128,128,0.18); padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Política de Privacidad de Dominó Cano <span class="badge">v3</span></h1>
+  <p class="updated">Última actualización: 14 de junio de 2026</p>
+
+  <p>Bienvenido a <strong>Dominó Cano</strong>, una aplicación móvil para el conteo y anotación
+  de puntos del juego de dominó dominicano, que incluye un <strong>Modo Torneo</strong> con la
+  opción de conectar varios teléfonos entre sí por red local. Tu privacidad es muy importante para
+  nosotros. Esta Política describe cómo se maneja la información en la aplicación.</p>
+
+  <p>Esta versión de la política aplica a las versiones de la aplicación que incluyen
+  <strong>anuncios</strong>, <strong>compras integradas opcionales</strong> y el
+  <strong>Modo Torneo en red local</strong>.</p>
+
+  <h2>1. Resumen</h2>
+  <ul>
+    <li>La app guarda tus partidas, torneos, nombres y ajustes <strong>solo en tu dispositivo</strong>.</li>
+    <li>El <strong>Modo Torneo en red</strong> conecta los teléfonos <strong>directamente entre sí</strong>
+    (Bluetooth/Wi-Fi), <strong>sin internet y sin servidores nuestros</strong>. No tenemos servidores.</li>
+    <li>Mostramos anuncios mediante <strong>Google AdMob</strong>, que puede recopilar y procesar
+    ciertos datos del dispositivo para servir y medir los anuncios.</li>
+    <li>Las compras se procesan a través de <strong>Google Play</strong>; nosotros no recibimos ni
+    almacenamos los datos de tu método de pago.</li>
+  </ul>
+
+  <h2>2. Información que tú ingresas y se guarda localmente</h2>
+  <p>Toda la información generada por el uso de la aplicación se almacena de forma
+  <strong>estrictamente local</strong> en tu dispositivo (mediante <code>SharedPreferences</code>)
+  y <strong>no</strong> se transmite a nuestros servidores:</p>
+  <ul>
+    <li>Nombres de los equipos o jugadores (solo para personalizar la pantalla y el historial).</li>
+    <li>Historial de partidas y de torneos (puntuaciones, fechas, ganadores y campeones).</li>
+    <li>Configuraciones (límite de puntos, jugadas especiales, tema, tipografía, idioma).</li>
+    <li>Monedas, temas/animaciones desbloqueados y el estado de "remover anuncios" y "Club/Pro".</li>
+  </ul>
+  <p>No solicitamos ni almacenamos datos personales de identificación como nombre legal completo,
+  correo electrónico ni número de teléfono.</p>
+
+  <h2>3. Modo Torneo en red local (conexión cercana)</h2>
+  <p>El Modo Torneo incluye una opción para que <strong>varios teléfonos se conecten entre sí</strong>
+  y lleven la anotación en conjunto (por ejemplo, en un colmado o club). Su funcionamiento respeta
+  tu privacidad:</p>
+  <ul>
+    <li>Los teléfonos se conectan <strong>directamente entre ellos</strong> mediante
+    <strong>Google Nearby Connections</strong> (Bluetooth y Wi-Fi), <strong>sin internet</strong> y
+    <strong>sin pasar por ningún servidor nuestro</strong>.</li>
+    <li>Para descubrir los dispositivos cercanos, Android <strong>exige</strong> el permiso de
+    <strong>Ubicación</strong>. La app <strong>NO lee, guarda ni envía tu ubicación</strong>; ese
+    permiso lo usa el sistema únicamente para el escaneo por Bluetooth/Wi-Fi.</li>
+    <li>Durante un torneo en red, los <strong>nombres de equipos</strong> y los <strong>marcadores</strong>
+    que se ingresan se comparten <strong>solo con los teléfonos conectados a esa misma sala</strong>,
+    de forma local. Estos datos <strong>no</strong> se transmiten a servidores ni a terceros.</li>
+    <li>La sala se protege con un <strong>código</strong> que el organizador comparte con sus
+    anotadores; el organizador puede sacar a un participante de la sala.</li>
+    <li>La app puede usar un <strong>servicio en primer plano</strong> (con una notificación visible)
+    para mantener viva la conexión local mientras la sala está abierta. No recopila datos.</li>
+  </ul>
+
+  <h2>4. Publicidad (Google AdMob)</h2>
+  <p>Para mantener la aplicación gratuita, mostramos anuncios mediante <strong>Google AdMob</strong>,
+  un servicio de Google. AdMob y Google, como proveedores externos, pueden recopilar y procesar
+  ciertos datos para mostrar, limitar y medir los anuncios, entre ellos:</p>
+  <ul>
+    <li>El <strong>identificador de publicidad</strong> del dispositivo (Advertising ID / AD_ID).</li>
+    <li>Dirección IP y <strong>ubicación aproximada</strong> derivada de ella.</li>
+    <li>Información del dispositivo y de la aplicación (modelo, sistema operativo, idioma).</li>
+    <li>Interacciones con los anuncios (impresiones, clics).</li>
+  </ul>
+  <p>Estos datos los recopila Google según sus propias políticas. Puedes consultar cómo Google usa
+  esta información aquí:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a></li>
+    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Cómo Google usa la información de apps que usan sus servicios</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Información sobre Google AdMob</a></li>
+  </ul>
+
+  <h2>5. Consentimiento y anuncios personalizados</h2>
+  <p>Si te encuentras en el Espacio Económico Europeo (EEE), el Reino Unido o Suiza, la aplicación
+  muestra un <strong>formulario de consentimiento</strong> (a través de la plataforma de mensajes
+  de usuario de Google, UMP) antes de cargar los anuncios, donde puedes elegir entre anuncios
+  personalizados o no personalizados.</p>
+  <p>En cualquier dispositivo Android puedes <strong>restablecer o limitar</strong> tu identificador
+  de publicidad desde <em>Ajustes → Privacidad → Anuncios</em> (la ruta puede variar según el
+  fabricante).</p>
+
+  <h2>6. Compras integradas</h2>
+  <p>La aplicación ofrece compras opcionales (por ejemplo, remover anuncios, desbloquear temas y
+  celebraciones, o el modo <strong>Club/Pro</strong> con el Torneo). Estas compras se procesan
+  íntegramente a través de <strong>Google Play</strong>.</p>
+  <ul>
+    <li><strong>No recibimos ni almacenamos</strong> los datos de tu tarjeta o método de pago; los
+    gestiona Google Play.</li>
+    <li>El estado de tus compras (qué desbloqueaste) se guarda localmente en tu dispositivo. La
+    opción "Restaurar compras" vuelve a verificar tus compras con Google Play.</li>
+  </ul>
+
+  <h2>7. Permisos del Dispositivo</h2>
+  <p>La aplicación usa los permisos mínimos necesarios:</p>
+  <ul>
+    <li><strong>Internet</strong> y <strong>estado de la red</strong>: para cargar los anuncios y
+    procesar las compras.</li>
+    <li><strong>Identificador de publicidad</strong> (AD_ID): para el funcionamiento de los anuncios.</li>
+    <li><strong>Bluetooth</strong> (anunciar/conectar/buscar) y <strong>Wi-Fi</strong>: para la
+    conexión local entre teléfonos del Modo Torneo en red (Google Nearby Connections).</li>
+    <li><strong>Ubicación</strong>: la <strong>exige Android</strong> para el escaneo de dispositivos
+    cercanos por Bluetooth/Wi-Fi. <strong>No</strong> recopilamos, almacenamos ni enviamos tu ubicación.</li>
+    <li><strong>Servicio en primer plano</strong> y <strong>Notificaciones</strong>: para mantener
+    visible y activa la sala del torneo en red mientras está abierta.</li>
+  </ul>
+  <p>No accedemos a tu cámara, contactos ni micrófono.</p>
+
+  <h2>8. Servicios de Terceros</h2>
+  <p>La aplicación se apoya en los siguientes servicios de terceros, cada uno con su propia política
+  de privacidad:</p>
+  <ul>
+    <li><strong>Google AdMob</strong> (anuncios) y <strong>Google Play Services</strong>.</li>
+    <li><strong>Google Play Billing</strong> (compras integradas).</li>
+    <li><strong>Google Nearby Connections</strong> (conexión local entre dispositivos para el Modo
+    Torneo; forma parte de Google Play Services).</li>
+  </ul>
+
+  <h2>9. Privacidad de los Niños</h2>
+  <p>La aplicación está dirigida a un público general y no está diseñada para menores de 13 años.
+  No recopilamos a sabiendas información personal de niños. Los anuncios se sirven conforme a las
+  políticas de Google.</p>
+
+  <h2>10. Seguridad y Eliminación de Datos</h2>
+  <p>Los datos que la app guarda permanecen en tu propio dispositivo, por lo que su seguridad
+  depende de la de tu teléfono. Los datos compartidos durante un torneo en red existen solo de forma
+  temporal en los teléfonos conectados a esa sala y no se conservan en ningún servidor. Si
+  <strong>desinstalas la aplicación o borras sus datos</strong> desde los ajustes del teléfono, todo
+  el historial, configuraciones y desbloqueos guardados localmente se eliminarán de forma permanente.
+  Para datos gestionados por Google (publicidad), consulta los controles y políticas de Google
+  enlazados arriba.</p>
+
+  <h2>11. Cambios a esta Política de Privacidad</h2>
+  <p>Es posible que actualicemos esta Política de vez en cuando. Te recomendamos revisar esta página
+  periódicamente. Los cambios son efectivos inmediatamente después de su publicación.</p>
+
+  <h2>12. Contacto</h2>
+  <p>Si tienes alguna duda o sugerencia sobre esta Política de Privacidad, contáctanos en:</p>
+  <ul>
+    <li><strong>Correo electrónico:</strong> <a href="mailto:nomcla31@gmail.com">nomcla31@gmail.com</a></li>
+  </ul>
+</body>
+</html>
