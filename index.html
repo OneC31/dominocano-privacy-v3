@@ -31,7 +31,7 @@
 </head>
 <body>
   <h1>Política de Privacidad de Dominó Cano <span class="badge">v3</span></h1>
-  <p class="updated">Última actualización: 14 de junio de 2026</p>
+  <p class="updated">Última actualización: 15 de junio de 2026</p>
 
   <p>Bienvenido a <strong>Dominó Cano</strong>, una aplicación móvil para el conteo y anotación
   de puntos del juego de dominó dominicano, que incluye un <strong>Modo Torneo</strong> con la
@@ -45,8 +45,10 @@
   <h2>1. Resumen</h2>
   <ul>
     <li>La app guarda tus partidas, torneos, nombres y ajustes <strong>solo en tu dispositivo</strong>.</li>
-    <li>El <strong>Modo Torneo en red</strong> conecta los teléfonos <strong>directamente entre sí</strong>
-    (Bluetooth/Wi-Fi), <strong>sin internet y sin servidores nuestros</strong>. No tenemos servidores.</li>
+    <li>El <strong>Modo Torneo en red</strong> conecta los teléfonos entre sí, ya sea
+    <strong>directamente</strong> (conexión cercana por Bluetooth/Wi-Fi) o a través de una
+    <strong>red Wi-Fi local</strong> (un router), siempre <strong>sin internet y sin servidores
+    nuestros</strong>. No tenemos servidores.</li>
     <li>Mostramos anuncios mediante <strong>Google AdMob</strong>, que puede recopilar y procesar
     ciertos datos del dispositivo para servir y medir los anuncios.</li>
     <li>Las compras se procesan a través de <strong>Google Play</strong>; nosotros no recibimos ni
@@ -66,22 +68,32 @@
   <p>No solicitamos ni almacenamos datos personales de identificación como nombre legal completo,
   correo electrónico ni número de teléfono.</p>
 
-  <h2>3. Modo Torneo en red local (conexión cercana)</h2>
+  <h2>3. Modo Torneo en red local (conexión cercana o red Wi-Fi)</h2>
   <p>El Modo Torneo incluye una opción para que <strong>varios teléfonos se conecten entre sí</strong>
-  y lleven la anotación en conjunto (por ejemplo, en un colmado o club). Su funcionamiento respeta
-  tu privacidad:</p>
+  y lleven la anotación en conjunto (por ejemplo, en un colmado o club). Existen <strong>dos formas</strong>
+  de conectarse, ambas <strong>sin internet</strong> y <strong>sin ningún servidor nuestro</strong>:</p>
   <ul>
-    <li>Los teléfonos se conectan <strong>directamente entre ellos</strong> mediante
-    <strong>Google Nearby Connections</strong> (Bluetooth y Wi-Fi), <strong>sin internet</strong> y
-    <strong>sin pasar por ningún servidor nuestro</strong>.</li>
-    <li>Para descubrir los dispositivos cercanos, Android <strong>exige</strong> el permiso de
-    <strong>Ubicación</strong>. La app <strong>NO lee, guarda ni envía tu ubicación</strong>; ese
-    permiso lo usa el sistema únicamente para el escaneo por Bluetooth/Wi-Fi.</li>
-    <li>Durante un torneo en red, los <strong>nombres de equipos</strong> y los <strong>marcadores</strong>
-    que se ingresan se comparten <strong>solo con los teléfonos conectados a esa misma sala</strong>,
-    de forma local. Estos datos <strong>no</strong> se transmiten a servidores ni a terceros.</li>
+    <li><strong>Conexión cercana:</strong> los teléfonos se conectan <strong>directamente entre
+    ellos</strong> mediante <strong>Google Nearby Connections</strong> (Bluetooth y Wi-Fi directo),
+    pensada para grupos pequeños.</li>
+    <li><strong>Red Wi-Fi local:</strong> como alternativa para grupos más grandes, los teléfonos se
+    conectan a través de una <strong>misma red Wi-Fi local</strong> (un router), también
+    <strong>sin internet</strong>. En este modo el organizador abre un <strong>pequeño servidor
+    local</strong> en su teléfono y los demás lo encuentran en esa misma red mediante el
+    <strong>descubrimiento de servicios en red local (mDNS)</strong>, o escribiendo la
+    <strong>dirección IP local</strong> que el organizador comparte. Los datos viajan únicamente entre
+    los teléfonos de esa red local; <strong>no</strong> salen a internet ni pasan por servidores nuestros.</li>
+    <li>Para la <strong>conexión cercana</strong> (Bluetooth), Android <strong>exige</strong> el permiso
+    de <strong>Ubicación</strong>. La app <strong>NO lee, guarda ni envía tu ubicación</strong>; ese
+    permiso lo usa el sistema únicamente para el escaneo por Bluetooth/Wi-Fi. El modo
+    <strong>Red Wi-Fi local NO usa la ubicación</strong>.</li>
+    <li>Durante un torneo en red (por cualquiera de las dos formas), los <strong>nombres de equipos</strong>
+    y los <strong>marcadores</strong> que se ingresan se comparten <strong>solo con los teléfonos
+    conectados a esa misma sala</strong>, de forma local. Estos datos <strong>no</strong> se transmiten
+    a servidores ni a terceros.</li>
     <li>La sala se protege con un <strong>código</strong> que el organizador comparte con sus
-    anotadores; el organizador puede sacar a un participante de la sala.</li>
+    anotadores; el organizador define el <strong>límite de participantes</strong> y puede sacar a un
+    participante de la sala.</li>
     <li>La app puede usar un <strong>servicio en primer plano</strong> (con una notificación visible)
     para mantener viva la conexión local mientras la sala está abierta. No recopila datos.</li>
   </ul>
@@ -128,12 +140,15 @@
   <p>La aplicación usa los permisos mínimos necesarios:</p>
   <ul>
     <li><strong>Internet</strong> y <strong>estado de la red</strong>: para cargar los anuncios y
-    procesar las compras.</li>
+    procesar las compras, y para la <strong>conexión local</strong> del Modo Torneo por red Wi-Fi
+    (comunicación entre los teléfonos de la misma red; <strong>no</strong> se envían datos a internet).</li>
     <li><strong>Identificador de publicidad</strong> (AD_ID): para el funcionamiento de los anuncios.</li>
-    <li><strong>Bluetooth</strong> (anunciar/conectar/buscar) y <strong>Wi-Fi</strong>: para la
-    conexión local entre teléfonos del Modo Torneo en red (Google Nearby Connections).</li>
-    <li><strong>Ubicación</strong>: la <strong>exige Android</strong> para el escaneo de dispositivos
-    cercanos por Bluetooth/Wi-Fi. <strong>No</strong> recopilamos, almacenamos ni enviamos tu ubicación.</li>
+    <li><strong>Bluetooth</strong> (anunciar/conectar/buscar) y <strong>Wi-Fi</strong> (incluido el
+    descubrimiento de servicios en red local / mDNS): para la conexión local entre teléfonos del
+    Modo Torneo en red (conexión cercana o red Wi-Fi local).</li>
+    <li><strong>Ubicación</strong>: la <strong>exige Android</strong> solo para el escaneo de
+    dispositivos cercanos por Bluetooth/Wi-Fi (modo de conexión cercana). <strong>No</strong>
+    recopilamos, almacenamos ni enviamos tu ubicación, y el modo Wi-Fi local no la utiliza.</li>
     <li><strong>Servicio en primer plano</strong> y <strong>Notificaciones</strong>: para mantener
     visible y activa la sala del torneo en red mientras está abierta.</li>
   </ul>
