@@ -31,7 +31,7 @@
 </head>
 <body>
   <h1>Política de Privacidad de Dominó Cano <span class="badge">v3</span></h1>
-  <p class="updated">Última actualización: 16 de junio de 2026</p>
+  <p class="updated">Última actualización: 23 de junio de 2026</p>
 
   <p>Bienvenido a <strong>Dominó Cano</strong>, una aplicación móvil para el conteo y anotación
   de puntos del juego de dominó dominicano, que incluye un <strong>Modo Torneo</strong> con la
@@ -106,7 +106,8 @@
   un servicio de Google. AdMob y Google, como proveedores externos, pueden recopilar y procesar
   ciertos datos para mostrar, limitar y medir los anuncios, entre ellos:</p>
   <ul>
-    <li>El <strong>identificador de publicidad</strong> del dispositivo (Advertising ID / AD_ID).</li>
+    <li>El <strong>identificador de publicidad</strong> del dispositivo (Advertising ID / AD_ID en
+    Android; <strong>IDFA</strong> en iOS).</li>
     <li>Dirección IP y <strong>ubicación aproximada</strong> derivada de ella.</li>
     <li>Información del dispositivo y de la aplicación (modelo, sistema operativo, idioma).</li>
     <li>Interacciones con los anuncios (impresiones, clics).</li>
@@ -124,19 +125,23 @@
   muestra un <strong>formulario de consentimiento</strong> (a través de la plataforma de mensajes
   de usuario de Google, UMP) antes de cargar los anuncios, donde puedes elegir entre anuncios
   personalizados o no personalizados.</p>
-  <p>En cualquier dispositivo Android puedes <strong>restablecer o limitar</strong> tu identificador
-  de publicidad desde <em>Ajustes → Privacidad → Anuncios</em> (la ruta puede variar según el
-  fabricante).</p>
+  <p>En <strong>iOS</strong>, antes de usar el identificador de publicidad (IDFA) para anuncios
+  personalizados, la aplicación muestra la solicitud de <strong>App Tracking Transparency (ATT)</strong>
+  de Apple. Si no concedes el permiso, igualmente verás anuncios, pero <strong>no personalizados</strong>.</p>
+  <p>Puedes <strong>restablecer o limitar</strong> tu identificador de publicidad desde los ajustes del
+  sistema: en <strong>Android</strong>, <em>Ajustes → Privacidad → Anuncios</em>; en <strong>iOS</strong>,
+  <em>Ajustes → Privacidad y seguridad → Seguimiento</em> (las rutas pueden variar según la versión).</p>
 
   <h2>6. Compras integradas</h2>
   <p>La aplicación ofrece compras opcionales (por ejemplo, remover anuncios, desbloquear temas y
   celebraciones, o el modo <strong>Club/Pro</strong> con el Torneo). Estas compras se procesan
-  íntegramente a través de <strong>Google Play</strong>.</p>
+  íntegramente a través de la tienda correspondiente: <strong>Google Play</strong> en Android o la
+  <strong>App Store</strong> en iOS.</p>
   <ul>
     <li><strong>No recibimos ni almacenamos</strong> los datos de tu tarjeta o método de pago; los
-    gestiona Google Play.</li>
+    gestiona Google&nbsp;Play o Apple según tu dispositivo.</li>
     <li>El estado de tus compras (qué desbloqueaste) se guarda localmente en tu dispositivo. La
-    opción "Restaurar compras" vuelve a verificar tus compras con Google Play.</li>
+    opción "Restaurar compras" vuelve a verificar tus compras con la tienda correspondiente.</li>
   </ul>
 
   <h2>7. Diagnóstico y reporte de fallos (Firebase Crashlytics)</h2>
@@ -172,6 +177,10 @@
     <li><strong>Servicio en primer plano</strong> y <strong>Notificaciones</strong>: para mantener
     visible y activa la sala del torneo en red mientras está abierta.</li>
   </ul>
+  <p>En <strong>iOS</strong>, el Modo Torneo en red funciona <strong>únicamente por red Wi-Fi local</strong>
+  (usando el permiso de <strong>red local</strong> de Apple para descubrir los teléfonos de la misma red);
+  <strong>no</strong> usa Bluetooth/conexión cercana ni ubicación. Para los anuncios, iOS solicita el
+  permiso de <strong>seguimiento (ATT)</strong> descrito en la sección 5.</p>
   <p>No accedemos a tu cámara, contactos ni micrófono.</p>
 
   <h2>9. Servicios de Terceros</h2>
@@ -179,10 +188,14 @@
   de privacidad:</p>
   <ul>
     <li><strong>Google AdMob</strong> (anuncios) y <strong>Google Play Services</strong>.</li>
-    <li><strong>Google Play Billing</strong> (compras integradas).</li>
+    <li><strong>Google Play Billing</strong> (compras integradas en Android) y <strong>Apple App Store /
+    StoreKit</strong> (compras integradas en iOS).</li>
     <li><strong>Google Nearby Connections</strong> (conexión local entre dispositivos para el Modo
-    Torneo; forma parte de Google Play Services).</li>
+    Torneo; <strong>solo en Android</strong>, forma parte de Google Play Services). En iOS el Modo
+    Torneo usa solo la red Wi-Fi local.</li>
     <li><strong>Firebase Crashlytics</strong> (reporte de fallos y diagnóstico; servicio de Google).</li>
+    <li><strong>Apple</strong> (App Store, App Tracking Transparency) en dispositivos iOS, según su
+    <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">política de privacidad</a>.</li>
   </ul>
 
   <h2>10. Privacidad de los Niños</h2>
